@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Agency</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calculator">Trip Cost Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="home">
+    <h2>Welcome to our Travel Agency!</h2>
+    <p>At our Travel Agency, we specialize in crafting unforgettable travel experiences tailored to your desires. Whether you're seeking an adventurous journey through exotic landscapes or a relaxing retreat on pristine beaches, we're here to turn your travel dreams into reality. With our expert guidance and personalized service, embark on a journey of discovery and create memories that last a lifetime.</p>
+</section>
+
+<section id="calculator">
+        <h2>Trip Cost Calculator</h2>
+        <form id="tripCalculator">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            <label for="duration">Duration (days):</label>
+            <input type="number" id="duration" name="duration" min="1" required>
+            <label for="budget">Budget ($):</label>
+            <input type="number" id="budget" name="budget" min="1" required>
+            <button type="submit">Calculate</button>
+            <p id="costResult"></p>
+        </form>
+    
+
+<br><br>
+    <!-- Table showing average travel expenses -->
+    <h3>Average Travel Expenses to Popular Destinations (AUD)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Destination</th>
+                <th>3 Star Package (AUD)</th>
+                <th>4 Star Package (AUD)</th>
+                <th>5 Star Package (AUD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sydney, Australia</td>
+                <td>$150</td>
+                <td>$250</td>
+                <td>$350</td>
+            </tr>
+            <tr>
+                <td>Paris, France</td>
+                <td>$200</td>
+                <td>$300</td>
+                <td>$400</td>
+            </tr>
+            <tr>
+                <td>Tokyo, Japan</td>
+                <td>$180</td>
+                <td>$280</td>
+                <td>$380</td>
+            </tr>
+            <tr>
+                <td>New York City, USA</td>
+                <td>$220</td>
+                <td>$320</td>
+                <td>$420</td>
+            </tr>
+            <tr>
+                <td>London, UK</td>
+                <td>$190</td>
+                <td>$290</td>
+                <td>$390</td>
+            </tr>
+            <tr>
+                <td>Rome, Italy</td>
+                <td>$180</td>
+                <td>$280</td>
+                <td>$380</td>
+            </tr>
+            <tr>
+                <td>Bangkok, Thailand</td>
+                <td>$120</td>
+                <td>$220</td>
+                <td>$320</td>
+            </tr>
+            <tr>
+                <td>Dubai, UAE</td>
+                <td>$250</td>
+                <td>$350</td>
+                <td>$450</td>
+            </tr>
+            <tr>
+                <td>Barcelona, Spain</td>
+                <td>$170</td>
+                <td>$270</td>
+                <td>$370</td>
+            </tr>
+            <tr>
+                <td>Singapore</td>
+                <td>$200</td>
+                <td>$300</td>
+                <td>$400</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+    <section id="contact" class="page">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
